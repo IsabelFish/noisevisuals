@@ -1,0 +1,283 @@
+@media (max-width: 700px) {
+  .info {
+    width: 400px!important;
+    height: 550px!important;
+    padding: 30px 70px!important;
+  }
+
+  #info-title {
+    font-size: 40px!important;
+  }
+
+  #img-1 {
+    top: -10px!important;
+    width: 450px!important;
+  }
+}
+
+@media (max-width: 470px) {
+  .info {
+    max-width: 350px!important;
+    height: 510px!important;
+    padding: 30px 35px!important;
+  }
+
+  #info-title {
+    font-size: 35px!important;
+  }
+
+  #img-1 {
+    top: -40px!important;
+    left: -240px!important;
+    width: 450px!important;
+  }
+}
+
+@media (max-height: 600px) {
+  .info {
+    height: 90vh!important;
+  }
+}
+
+@font-face {
+  font-family: FluxischElse-Regular;
+  src: url("FluxischElse-Regular.otf") format("opentype");
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  overflow-x:hidden;
+}
+
+#buttons {
+  z-index: 1;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.top-buttons {
+  border: none;
+  text-decoration: none;
+  font-family: FluxischElse-Regular, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+
+  border-radius: 5px;
+  padding: 6px 8px 4px 8px;
+  background-color: black;
+  color: white!important;
+
+}
+
+.top-buttons:hover {
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+#info-clicked {
+  display: block;
+  z-index: 2;
+
+  margin: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);;
+}
+
+.info {
+  margin: auto; 
+  padding: 20px 110px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+
+  background-color: white;
+  border-radius: 5px;
+  width: 600px;
+  height: 500px;
+}
+
+#img-1 {
+  position: fixed;
+  top: -60px;
+  left: -170px;
+  width: 550px;
+  pointer-events: none;
+}
+
+#img-2 {
+  position: fixed;
+  bottom: -60px;
+  right: -170px;
+  width: 300px;
+  pointer-events: none;
+}
+
+#scroll-content {
+  margin: auto;
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  padding: 10px;
+}
+
+.X {
+  z-index: 100;
+  position: fixed;
+  font-family: FluxischElse-Regular, sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 6px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  top: 5px;
+  right: 25px;
+}
+
+.X:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+#info-title {
+text-align: center;
+font-family: FluxischElse-Regular, sans-serif;
+font-size: 50px;
+cursor: default;
+}
+
+p {
+  font-family: FluxischElse-Regular, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  cursor: default;
+}
+.center-text {
+  text-align: center;
+  cursor: default;
+}
+
+span {
+  white-space: nowrap;
+}
+
+.info-link {
+  color: black;
+  cursor: pointer;
+}
+
+.info-link:hover {
+  color: gray;
+}
+
+#leave {
+  color: black;
+}
+
+#leave:hover {
+  color: gray;
+}
+
+.page {
+  margin-top: -20px;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.new-tab {
+  position: absolute;
+  margin: 0;
+  cursor: pointer;
+
+  border-radius: 5px;
+  padding: 6px 8px 4px 8px;
+  background-color: black;
+  color: white;
+  top: 20px;
+  right: 20px;
+}
+
+.new-tab:hover {
+  background-color: gray;
+}
+
+canvas {
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+#center-book {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#book-pdf {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  position: relative;
+  height: 70vh;
+  width: 80vw; 
+  border-radius: 5px;
+}
+
+#book-header1 {
+  padding: 20px 50px 0px 50px;
+  text-align: center;
+  font-family: FluxischElse-Regular, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+#book-header2 {
+  padding: 0px 50px 20px 50px;
+  text-align: center;
+  font-family: FluxischElse-Regular, sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+.noise-image {
+  z-index: 2;
+  position: fixed;
+}
+
+#img-3 {
+  bottom: 0px;
+  right: -300px;
+  width: 500px;
+}
+
+#img-4 {
+  top: -60px;
+  left: -300px;
+  width: 500px;
+}
